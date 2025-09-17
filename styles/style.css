@@ -127,6 +127,9 @@ html {
     color: white;
     font-size: 22px;
     margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-button:hover {
@@ -144,6 +147,7 @@ html {
 }
 
 .lots-h2 {
+    margin-left: 64px;
     margin-bottom: 27px;
     font-size: 40px;
     font-weight: bold;
