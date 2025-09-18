@@ -41,14 +41,8 @@ html {
 }
 
 .img-ref {
-    margin-bottom: -3.75px;
+    font-size: 0;
 }
-
-/*
-    Вопрос по поводу ссылки.
-    Она имеет высоту 108.75px, а картинка имеет размер 105p, из-за этого появляются лишние 3.75px.
-    Как корректно задать её высоту, чтобы не писать костыль в виде margin-bottom: -3.75px?
-*/
 
 .header-logo-img {
     justify-self: center;
@@ -96,7 +90,8 @@ html {
 
 
 .span-text {
-    min-height: 115px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .aligned-text-left {
@@ -188,7 +183,7 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    height: 100%;
+    min-height: 596px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -238,6 +233,7 @@ html {
     margin-left: 64px;
     margin-top: 29px;
     text-transform: lowercase;
+    max-width: fit-content;
 }
 
 .about-section {
