@@ -40,6 +40,16 @@ html {
     text-decoration: none;
 }
 
+.img-ref {
+    margin-bottom: -3.75px;
+}
+
+/*
+    Вопрос по поводу ссылки.
+    Она имеет высоту 108.75px, а картинка имеет размер 105p, из-за этого появляются лишние 3.75px.
+    Как корректно задать её высоту, чтобы не писать костыль в виде margin-bottom: -3.75px?
+*/
+
 .header-logo-img {
     justify-self: center;
     width: 148px;
@@ -93,8 +103,12 @@ html {
     width: 100%;
     margin-left: 50px;
     text-align: left;
-
 }
+
+.letter-spacing-normal {
+    letter-spacing: normal
+}
+
 .aligned-text-center {
     text-align: center;
     width: 100%;
@@ -107,15 +121,6 @@ html {
     display: block;
     margin-right: 50px;
 }
-
-.letter-align {
-    padding-left: 0.1em;
-}
-
-.letter-spacing-normal {
-    letter-spacing: normal
-}
-
 
 .main-bottom {
     display: flex;
@@ -138,6 +143,10 @@ html {
     word-spacing: calc(1em / (10/11));
 }
 
+.button-ref {
+    text-decoration: none;
+}
+
 .main-button {
     font: inherit;
     border: 1px solid white;
@@ -158,10 +167,6 @@ html {
     cursor: pointer;
 }
 
-.button-ref {
-    text-decoration: none;
-}
-
 .lots-main-header {
     margin-left: 64px;
     margin-bottom: 27px;
@@ -178,6 +183,18 @@ html {
     min-height: 596px;
 }
 
+.lot {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 .card_type_film {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/card-lot-01.jpg");
 }
@@ -190,17 +207,6 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/card-lot-03.jpg");
 }
 
-.lot {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
 
 .lot-overlay {
     display: flex;
@@ -232,7 +238,6 @@ html {
     margin-left: 64px;
     margin-top: 29px;
     text-transform: lowercase;
-
 }
 
 .about-section {
